@@ -20,23 +20,22 @@ const socialLinks = [
 const HeroSection = () => {
   return (
     <section
-      className="min-h-screen bg-no-repeat bg-center bg-cover"
+      className="min-h-screen pb-16 bg-no-repeat bg-center bg-cover"
       style={{ backgroundImage: "url('/images/heroBg.png')" }}
     >
       <div className="container pt-44">
-        <h1 className="text-7xl font-bold leading-32 mb-16">
+        <h1 className="text-5xl max-w-[1110px] md:text-7xl font-bold leading-18 md:leading-32 mb-16">
           Trusted{' '}
           <span className="bg-[var(--foreground)] text-[var(--background)] px-4 py-0 rounded-2xl">
             Partner
           </span>{' '}
-          for <br />
-          Your Website{' '}
+          for Your Website{' '}
           <span className="bg-[var(--foreground)] text-[var(--background)] px-4 py-0 rounded-2xl">
             Develop.
           </span>
         </h1>
-        <div className="grid grid-cols-[1fr_3fr]">
-          <div className="relative">
+        <div className="grid grid-cols-1 md:grid-cols-[1fr_3fr]">
+          <div className="relative hidden md:block">
             <div className="absolute bottom-10 left-[-60px] rotate-270 h-fit w-fit">
               <p className="text-lg text-[var(--foreground)] mb-2">
                 @williamrey

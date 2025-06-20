@@ -13,9 +13,8 @@ const AboutSection = () => {
         <div className="mb-14 flex items-center justify-end">
           <SectionTitle variant={'light'} title={'About'} />
         </div>
-        <h2 className="text-7xl font-bold leading-32 mb-12 text-right">
-          I’ve been
-          <span className="bg-[var(--foreground)] text-[var(--background)] px-4 py-0 rounded-2xl">
+        <h2 className="text-5xl md:text-7xl font-bold leading-22 md:leading-32 mb-12 text-right">
+          I’ve been <span className="bg-[var(--foreground)] text-[var(--background)] px-4 py-0 rounded-2xl">
             Developing
           </span>
           <br />
@@ -24,14 +23,14 @@ const AboutSection = () => {
             2013
           </span>
         </h2>
-        <p className="text-center text-lg leading-loose">
+        <p className="text-center text-base md:text-lg leading-tight md:leading-loose">
           We start every new client interaction with an in-depth discovery call
           where we get <br /> to know each other and recommend the best course
           of action.
         </p>
 
-        <div className="grid grid-cols-[1fr_4fr] mt-22 gap-5 items-center">
-          <h6 className="text-2xl">
+        <div className="grid grid-cols-1 md:grid-cols-[1fr_4fr] mt-22 gap-5 items-center">
+          <h6 className="text-2xl text-center md:text-left mb-6 md:mb-0">
             PREVIOUSLY
             <br />
             WORKED ON

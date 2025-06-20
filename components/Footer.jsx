@@ -73,7 +73,7 @@ const Footer = () => {
     <footer className="mt-auto pb-5">
       <div className="container bg-[var(--foreground)] rounded-[52px] !p-16">
         {/* Top Section */}
-        <div className="grid grid-cols-[1fr_2fr] gap-5">
+        <div className="grid grid-cols-1 md:grid-cols-[1fr_2fr] gap-10">
           <div>
             <Link href={'/'}>
               <Image
@@ -86,11 +86,11 @@ const Footer = () => {
             </Link>
           </div>
           <div>
-            <h3 className="text-[var(--background)] font-bold text-6xl mb-24">
+            <h3 className="text-[var(--background)] font-bold text-5xl md:text-6xl mb-24">
               As You Can
             </h3>
 
-            <div className="flex  justify-between gap-6">
+            <div className="flex flex-col md:flex-row justify-between gap-6">
               <div className="flex flex-col gap-8">
                 <ol className="flex flex-col gap-2">
                   <li className="text-[var(--foreground-text-muted)] text-base mb-2">
@@ -168,7 +168,7 @@ const Footer = () => {
           </div>
         </div>
         {/* bottom Section */}
-        <div className="mt-24 flex items-center justify-between gap-5 w-full">
+        <div className="mt-24 flex flex-col md:flex-row items-center justify-between gap-5 w-full">
           <Image
             src={besnik}
             alt="User avatar"

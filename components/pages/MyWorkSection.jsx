@@ -29,15 +29,15 @@ const MyWorkSection = () => {
   return (
     <div>
       <div className="container bg-[var(--foreground)] rounded-[52px] !p-16">
-        <div className="w-full flex justify-between mt-14">
+        <div className="w-full flex flex-col md:flex-row justify-between gap-8 mt-14">
           <SectionTitle variant={'dark'} title={'Work Process'} />
           <h2 className="text-[var(--background)] text-6xl leading-20">
             My Work Process
           </h2>
-          <div className="w-[212px]"></div>
+          <div className="hidden md:block w-[212px]"></div>
         </div>
 
-        <div className="grid grid-cols-2 gap-2 mt-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-2 mt-16">
           {works.map((work) => {
             return (
               <div className="bg-[var(--background)]/8 hover:bg-[var(--main)] group p-8 rounded-[30px] flex flex-col gap-4 hover:rotate-3 transition-all">

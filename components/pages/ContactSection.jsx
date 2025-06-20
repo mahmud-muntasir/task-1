@@ -26,10 +26,10 @@ const ContactSection = () => {
       className="min-h-screen pt-16 bg-no-repeat bg-center bg-cover"
       style={{ backgroundImage: "url('/images/contactBg.png')" }}
     >
-      <div className="container grid grid-cols-[2fr_1fr] gap-5">
+      <div className="container mb-12 md:mb-0 grid grid-cols-1 md:grid-cols-[2fr_1fr] gap-5">
         <div>
           <SectionTitle variant={'light'} title={'Contact'} />
-          <h2 className="text-7xl font-bold leading-24 mb-12 mt-12">
+          <h2 className="text-5xl md:text-7xl font-bold leading-16 md:leading-24 mb-12 mt-12">
             Interested in <br /> work{' '}
             <span className="bg-[var(--foreground)] text-[var(--background)] px-4 py-0 rounded-2xl">
               together?

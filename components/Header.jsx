@@ -38,7 +38,7 @@ const Header = () => {
       }`}
     >
       <div className="container h-[114px] flex items-center rounded-br-[30px] rounded-bl-[30px]">
-        <nav className="max-w-[1340px] mx-auto flex items-center justify-between w-full">
+        <nav className="max-w-[1340px] flex mx-auto items-center justify-between w-full">
           <Link href={'/'}>
             <Image
               src={selectedLogo}
@@ -48,7 +48,8 @@ const Header = () => {
               priority
             />
           </Link>
-          <div className="flex items-center gap-10">
+          {/* pc version */}
+          <div className="md:flex hidden items-center gap-10">
             <ul className="flex items-center gap-8">
               {navMenu.map((menu) => (
                 <li key={menu.label} className="text-base">
@@ -58,6 +59,10 @@ const Header = () => {
             </ul>
             <ThemeToggle />
             <ButtonIcon variant={'arrowRight'} label={'Start Project'} />
+          </div>
+          {/* mobile version */}
+          <div className="md:hidden flex items-center gap-10">
+            <ThemeToggle />
           </div>
         </nav>
       </div>

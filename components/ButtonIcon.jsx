@@ -23,7 +23,7 @@ const ButtonIcon = ({ variant, label }) => {
   const { Icon, sizeClass } = iconEntry;
 
   return (
-    <button className="flex items-center gap-4 border border-[var(--border)] rounded-full h-[58px] pr-4 tracking-tight font-base cursor-pointer">
+    <button className="group flex items-center gap-4 border border-[var(--border)] rounded-full h-[58px] pr-4 tracking-tight font-base cursor-pointer">
       <span
         className={`w-[38px] h-[38px] flex items-center justify-center rounded-full border border-[var(--border)] ${sizeClass}`}
       >
